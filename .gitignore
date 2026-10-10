@@ -1,0 +1,6 @@
+# Ignore large media files that exceed GitHub's 100MB upload limit
+*.mp4
+*.mov
+*.avi
+*.mkv
+
