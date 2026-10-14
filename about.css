@@ -1,0 +1,141 @@
+/* ==========================================================================
+   PERSONAL ABOUT ME SECTION STYLES
+   ========================================================================== */
+
+.about-me-container {
+  position: relative;
+}
+
+.about-info-item {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.about-info-item i {
+  color: var(--accent-color);
+  font-size: 0.95rem;
+}
+
+.about-info-item strong {
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 90px;
+}
+
+.about-info-item span {
+  color: var(--text-secondary);
+}
+
+/* Counts Box (Personal template stats) */
+.count-box {
+  padding: 30px 24px;
+  height: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.count-box:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-4px);
+}
+
+.count-box i {
+  font-size: 2.2rem;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.count-box h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.count-box p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* Timeline Education */
+.education-timeline {
+  position: relative;
+  padding-left: 25px;
+  border-left: 2px solid var(--border-glass);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: 2px solid #040404;
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.timeline-year {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  background: var(--accent-soft);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.timeline-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+/* Interest Tags */
+.interest-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.interest-badge i {
+  color: var(--accent-color);
+}
+
+.interest-badge:hover {
+  border-color: var(--accent-color);
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+}

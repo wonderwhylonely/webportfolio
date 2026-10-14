@@ -1,0 +1,166 @@
+/* ==========================================================================
+   PERSONAL NAVBAR STYLES
+   ========================================================================== */
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 22px 0;
+  background: transparent;
+  transition: all 0.35s ease;
+}
+
+.custom-navbar.scrolled {
+  padding: 14px 0;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+/* Brand Logo "Personal" */
+.navbar-brand-personal {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand-personal span.dot {
+  color: var(--accent-color);
+}
+
+/* Navigation Links */
+.navbar-nav-personal {
+  gap: 24px;
+}
+
+.navbar-nav-personal .nav-link-personal {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 6px 2px !important;
+  transition: var(--transition-fast);
+}
+
+.navbar-nav-personal .nav-link-personal::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav-personal .nav-link-personal:hover {
+  color: #ffffff;
+}
+
+.navbar-nav-personal .nav-link-personal:hover::after,
+.navbar-nav-personal .nav-link-personal.active::after {
+  width: 100%;
+}
+
+.navbar-nav-personal .nav-link-personal.active {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.mobile-toggle-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-menu-collapse {
+  display: none;
+}
+
+.nav-backdrop {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-toggle-btn {
+    display: block;
+  }
+  .nav-menu-collapse {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #0d0d0f;
+    backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-glass);
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1050;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
+  }
+  .nav-menu-collapse.show {
+    right: 0;
+  }
+  .nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    z-index: 1040;
+  }
+  .nav-backdrop.show {
+    display: block;
+  }
+  .close-menu-btn {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}

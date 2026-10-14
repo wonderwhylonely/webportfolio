@@ -1,0 +1,158 @@
+/* ==========================================================================
+   PERSONAL PORTFOLIO SECTION STYLES
+   ========================================================================== */
+
+/* Filter Nav Buttons */
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.portfolio-filter-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  padding: 7px 20px;
+  border-radius: 30px;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.portfolio-filter-btn:hover {
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.portfolio-filter-btn.active {
+  background: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+/* Portfolio Card */
+.portfolio-card-personal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.portfolio-card-personal:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-thumb-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #000000;
+}
+
+.portfolio-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card-personal:hover .portfolio-thumb-wrap img {
+  transform: scale(1.07);
+}
+
+.portfolio-badge-pill {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(24, 210, 110, 0.3);
+}
+
+.portfolio-content {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.portfolio-title-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.portfolio-desc-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.portfolio-btn-view {
+  width: 100%;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent-soft);
+  color: var(--accent-color);
+  border: 1px solid rgba(24, 210, 110, 0.25);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.portfolio-btn-view:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+/* Modal Popup */
+.modal-content.personal-modal {
+  background: #111115;
+  border: 1px solid var(--border-glass);
+  border-radius: 18px;
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+.personal-modal .modal-header {
+  border-bottom: 1px solid var(--border-glass);
+  padding: 20px 24px;
+}
+
+.personal-modal .modal-footer {
+  border-top: 1px solid var(--border-glass);
+  padding: 16px 24px;
+}
+
+.personal-modal .btn-close {
+  filter: invert(1);
+}
