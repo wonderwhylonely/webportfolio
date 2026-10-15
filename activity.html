@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Activity | จิฬาวรรณ ขุนอินทร์ (กิจกรรมและการอบรม)</title>
   
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/activity.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./navbar.css">
+  <link rel="stylesheet" href="./hero.css">
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./activity.css">
+  <link rel="stylesheet" href="./animations.css">
 </head>
 <body>
 
@@ -28,14 +30,12 @@
       <a href="index.html" class="navbar-brand-personal">JILAWAN<span class="dot">.</span></a>
 
       <!-- Desktop Nav Menu -->
-      <div class="d-none d-lg-flex align-items-center">
-        <ul class="navbar-nav-personal list-unstyled d-flex mb-0">
-          <li><a href="index.html" class="nav-link-personal">Home</a></li>
-          <li><a href="education.html" class="nav-link-personal">Education</a></li>
-          <li><a href="portfolio.html" class="nav-link-personal">Portfolio</a></li>
-          <li><a href="activity.html" class="nav-link-personal active">Activity</a></li>
-          <li><a href="contact.html" class="nav-link-personal">Contact</a></li>
-        </ul>
+      <div class="navbar-nav-custom">
+        <a class="nav-link-custom" href="index.html">Home</a>
+        <a class="nav-link-custom" href="education.html">Education</a>
+        <a class="nav-link-custom" href="portfolio.html">Portfolio</a>
+        <a class="nav-link-custom" href="activity.html">Activity</a>
+        <a class="nav-link-custom" href="contact.html">Contact</a>
       </div>
 
       <div class="d-flex align-items-center gap-3">
@@ -65,29 +65,28 @@
       </div>
 
       <!-- Activity Cards Grid -->
-      <div class="row g-4 justify-content-center">
+      <div class="row g-3 justify-content-center">
         
         <!-- Activity 1 -->
         <div class="col-md-6 reveal-fade-up">
           <div class="activity-card">
             <div class="activity-thumb-wrapper">
               <span class="activity-category-badge">Workshop</span>
-              <img src="assets/images/ac1.jpg" alt="Creative Media & Digital Content 2025">
+              <img src="ac1.jpg" alt="กิจกรรมอบรม">
             </div>
             <div class="activity-body">
               <div class="activity-date-meta">
                 <i class="fa-solid fa-calendar-days"></i> 16 สิงหาคม 2569
               </div>
-              <h3 class="activity-title">โครงการอบรมเชิงปฏิบัติการ "UX/UI "พื้นฐาน</h3>
+              <h3 class="activity-title">โครงการอบรมเชิงปฏิบัติการ "UX/UI พื้นฐาน"</h3>
               <div class="activity-location">
                 <i class="fa-solid fa-location-dot"></i> คณะวิทยาการสารสนเทศ มหาวิทยาลัยมหาสารคาม
               </div>
               <p class="activity-desc">
-                เข้าร่วมอบรมโครงการอบรมเชิงปฏิบัติการ "UX/UI "พื้นฐาน 
+                เข้าร่วมอบรมโครงการอบรมเชิงปฏิบัติการ "UX/UI พื้นฐาน" 
               </p>
               <div class="activity-highlights">
                 <span class="activity-highlight-pill"><i class="fa-solid fa-clapperboard me-1"></i> UX/UI</span>
-    
               </div>
             </div>
           </div>
@@ -98,7 +97,7 @@
           <div class="activity-card">
             <div class="activity-thumb-wrapper">
               <span class="activity-category-badge">X Campus Advertising Idea Contest</span>
-              <img src="assets/images/ac3.jpg" alt="Cinematic Color Grading Masterclass">
+              <img src="ac3.jpg" alt="กิจกรรมอบรม">
             </div>
             <div class="activity-body">
               <div class="activity-date-meta">
@@ -109,7 +108,7 @@
                 <i class="fa-solid fa-location-dot"></i> คณะวิทยาการสารสนเทศ
               </div>
               <p class="activity-desc">
-                ได้เข้ารอบ 2 และได้ส่งโฆษณาเกี่ยวกับถุงยางอนามัย Durex ลงประกวด
+                ได้รับการคัดเลือกเข้ารอบ และส่งโฆษณาเกี่ยวกับถุงยางอนามัย Durex ลงประกวด
               </p>
               <div class="activity-highlights">
                 <span class="activity-highlight-pill"><i class="fa-solid fa-sliders me-1"></i> Director</span>
@@ -123,7 +122,7 @@
           <div class="activity-card">
             <div class="activity-thumb-wrapper">
               <span class="activity-category-badge">Cinematic</span>
-              <img src="assets/images/ac2.jfif" alt="Creative Media Annual Showcase">
+              <img src="ac2.jfif" alt="กิจกรรมอบรม">
             </div>
             <div class="activity-body">
               <div class="activity-date-meta">
@@ -134,7 +133,7 @@
                 <i class="fa-solid fa-location-dot"></i> ฉายในโรงภาพยนตร์คณะวิทยาการสารสนเทศ
               </div>
               <p class="activity-desc">
-                  ถ่ายทำภาพยนตร์ เพื่อสามารถปฏิบัติ ทำงานได้จริง
+                ถ่ายทำภาพยนตร์ เพื่อสามารถปฏิบัติ งานได้จริง
               </p>
               <div class="activity-highlights">
                 <span class="activity-highlight-pill"><i class="fa-solid fa-palette me-1"></i> 3P</span>
@@ -148,11 +147,10 @@
     </div>
   </main>
 
-  <!-- FOOTER (เหมือนกันทุกหน้า) -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="row align-items-center">
-        <!-- เมนูลิงก์ฝั่งซ้าย -->
         <div class="col-md-6">
           <div class="footer-nav-links justify-content-start">
             <a href="index.html">Home</a>
@@ -162,7 +160,6 @@
             <a href="contact.html">Contact</a>
           </div>
         </div>
-        <!-- ข้อความลิขสิทธิ์ฝั่งขวา -->
         <div class="col-md-6 text-md-end">
           <p class="footer-copy mb-0">
             &copy; 2026 <strong>Portfolio</strong> | Designed by <strong>จิฬาวรรณ ขุนอินทร์</strong>
@@ -178,9 +175,8 @@
   </button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="./theme.js"></script>
+  <script src="./scroll.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
-
